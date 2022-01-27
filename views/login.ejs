@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./head')%>
+</head>
+<body>
+    <header>
+        <%- include('./header')%>
+    </header>
+    <div class="container">
+        <div class="second-container">
+            <h1>Login</h1>
+
+            <section>
+                <form method="post" action="http://localhost:3333/login">
+                    <div><input type="text" name="username" placeholder="username"/></div>
+                    <div><input type="password" name="password" placeholder="password"/></div>
+                    <div><input type="submit" value="Login"/></div>
+                </form>
+                <span class="user-exists">Don't have an account?<a href="http://localhost:3333/register">Register</a></span>
+
+            </section>
+        </div>
+    </div>
+    <footer>
+        <%- include('./footer')%>
+    </footer>
+</body>
+</html>

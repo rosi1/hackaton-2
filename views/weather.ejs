@@ -1,0 +1,24 @@
+
+<div class="container">
+    <div class="second-container">
+        
+        <form action="http://localhost:3333/" method="get" id="weather-form">
+            <input type="text" id="city" name="city" placeholder="Pls insert a city"/>
+        </form>
+        
+        <!-- <div class="result"> -->
+            <div class="result1">
+                <h1 class="city"><%= city%>: </h1>
+                <h1 class="temp"><%= temp%>℃</h1>
+            </div>
+            
+            <div class="icon-desc">
+                <img class="icon" src="http://openweathermap.org/img/w/<%= icon%>.png" alt="weather-icon"/>
+                <h3 class="desc"><%= description%></h3>
+            </div>
+            
+        <!-- </div> -->
+    </div>
+    
+</div>
+

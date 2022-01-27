@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Creepster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Creepster", "cursive";
+  font-family: "Acme", sans-serif;
+  color: #ccc;
+  background: black;
+  background-repeat: no-repeat;
+  min-height: 100%;
+}
+.container {
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  height: 550px;
+  width: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(stars.jpg);
+}
+.second-container {
+  color: black;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+}
+.weather-title {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+form input {
+  width: 60%;
+  height: 2.2rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+  opacity: 0.8;
+}
+.result1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.icon-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -50px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  color: #ccc;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1 {
+  margin-bottom: 2rem;
+}
+
+#left-img {
+  float: right;
+}
+@media screen and(max-width: 992px) {
+  .container {
+    height: 300px;
+    width: 400px;
+  }
+}
